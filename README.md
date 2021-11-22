@@ -1,10 +1,17 @@
 # sia-js
-nodejs lib for siacoin functions
+Frontend and nodejs lib for siacoin functions
+
+# Getting Started
+## Installation
+This library is still highly experimental, and has not been published to a registry yet. For now, install in your project using:
+```shell
+npm install @dewebjs/sia-js
+```
 
 ## Usage
 ### Import Lib
 ```js
-var Sia = require('sia-js');
+import Sia from '@dewebjs/sia-js';
 ```
 ### Key Derivation
 #### Generate secure random seed
@@ -25,6 +32,20 @@ var keyPair = Sia.keyPair.deriveAddress('cbfaced5375c679a1181be27b7530a1c77dcf6a
   address: '91948070704e646adb8ce40655df31e9a0a157cffaabd3776a67c6ebedb00c6e5144bb726fda',
   publicKey: 'e60400f316b823195c6f4f996cfa04827499b2d3d48e0bf8b711a32c653f59a0',
   privateKey: 'cbfaced5375c679a1181be27b7530a1c77dcf6a2b2c0c14ac9c62ce5d7fdf5e6e60400f316b823195c6f4f996cfa04827499b2d3d48e0bf8b711a32c653f59a0'
+}
+```
+#### From string salt Key
+```js
+var keyPair = Sia.keyPair.generateSaltString(); // salt can be provided as param, ex: Sia.keyPair.generateSaltString("BhQBb6Kc4iCN4RjQkUQuaRGStsBd8EnU");
+```
+#### Example response:
+```
+{
+  address: "27423144bb1f2bd49d6299bed22c1ef605cccf7d585127d18cfd8ee0fe17709c2bf619eb4481",
+  privateKey: "35835be1d3b696d4b730fa4f59a9defc0b3633d96c5cb274e16eecd6b6a7a6a1885df509adc99aeadc553cbd22496323a2cac6b728a9df579dcfeff97235aa45",
+  publicKey: "885df509adc99aeadc553cbd22496323a2cac6b728a9df579dcfeff97235aa45",
+  salt: "BhQBb6Kc4iCN4RjQkUQuaRGStsBd8EnU",
+  seed: "launching onboard eight licks both swung tuxedo video twang hedgehog software dude scuba dazed dogs inundate enmity alpine prying hijack nimbly dove roomy bowling badge lakes went upkeep afloat"
 }
 ```
 
