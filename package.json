@@ -1,5 +1,5 @@
 {
-  "name": "@deweb/sia-js",
+  "name": "@dewebjs/sia-js",
   "version": "1.0.0",
   "main": "lib/index.js",
   "repository": "https://github.com/deweb-services/sia-js",
