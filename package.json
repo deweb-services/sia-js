@@ -2,7 +2,7 @@
   "name": "@deweb/sia-js",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "repository": "https://github.com/escada-finance/sia-js",
+  "repository": "https://github.com/deweb-services/sia-js",
   "author": "Escada Finance",
   "license": "MIT",
   "scripts": {
