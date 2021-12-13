@@ -5,13 +5,17 @@
   "repository": "https://github.com/deweb-services/sia-js",
   "author": "Escada Finance",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deweb-services/sia-js/issues"
+  },
+  "homepage": "https://github.com/deweb-services/sia-js#readme",
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
     "bignumber.js": "^9.0.0",
     "buffer": "^6.0.3",
-    "blake2b": "^2.1.3",
+    "blake2b": "2.1.3",
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
